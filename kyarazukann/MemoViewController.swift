@@ -34,7 +34,7 @@ class MemoViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         table.reloadData()
         
-        print(recievedContentNumber!)
+        //print(recievedContentNumber!)
         
     }
     

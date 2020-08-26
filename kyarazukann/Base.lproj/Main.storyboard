@@ -156,7 +156,7 @@
             <objects>
                 <viewController id="BW5-Fh-IKj" customClass="NoteViewController" customModule="kyarazukann" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d9c-Ez-bBL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IEi-jp-OMS">
@@ -242,9 +242,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="BW5-Fh-IKj" kind="show" identifier="toNextViewController" trigger="accessoryAction" id="8c9-xl-dno"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -271,6 +268,7 @@
                     <connections>
                         <outlet property="table" destination="Soe-Ph-LIA" id="gF2-Id-wrQ"/>
                         <outlet property="titleTextField" destination="EFL-cb-oQH" id="fp3-R6-g82"/>
+                        <segue destination="BW5-Fh-IKj" kind="presentation" identifier="MemoViewController" id="TZX-nk-d8w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4kH-fT-AYr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

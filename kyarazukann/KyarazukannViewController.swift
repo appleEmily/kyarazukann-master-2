@@ -84,10 +84,8 @@ class KyarazukannViewController: UIViewController, UITableViewDelegate, UITableV
         //contentNumberというInt型の変数を上の方で宣言してあげます。
         //このcontentNumberに、タップされたcellが何行めなのか、という情報を入れておいてあげて、この変数を下の方に書いたメソッドでmemoViewControllerに引き渡すよ！
         contentNumber = indexPath.row
-        print(contentNumber!)
-    
-    
-    
+        performSegue(withIdentifier: "MemoViewController", sender: nil)
+
     }
     
     //値を引き渡すためのメソッド
@@ -95,7 +93,7 @@ class KyarazukannViewController: UIViewController, UITableViewDelegate, UITableV
         if segue.identifier == "MemoViewController" {
             let vc = segue.destination as! MemoViewController
             vc.recievedContentNumber = self.contentNumber
-            //print(vc.recievedContentNumber!)
+            
         }
     }
 
